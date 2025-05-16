@@ -1,0 +1,55 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+<div class="main-container">
+
+    <div class="box-container">
+
+        <label>Text</label>
+
+        <input type="text"
+               @bind="_originalText"
+               placeholder="Text to cipher." />
+
+        <label>Key</label>
+
+        <input id="key-input"
+               type="text"
+               @bind="_key"
+               placeholder="Key provide." />
+
+        <button @onclick="CipherTransposition">Cipher</button>
+
+        <label>Result</label>
+        <input id="result-input" 
+               readonly
+               value="@_resultCipherText" />
+
+    </div>
+
+
+    <div class="box-container">
+
+        <label>Ciphered Text</label>
+        <input type="text"
+               @bind="_cipherText"
+               placeholder="Text to decipher." />
+
+        <label>Key</label>
+        <input id="key-input"
+               type="text"
+               @bind="_key"
+               placeholder="Key provide." />
+
+
+        <button @onclick="DecipherTransposition">Decipher</button>
+
+        <label>Result</label>
+        <input id="result-input"
+               readonly
+               value="@_resultDecipherText" />
+
+    </div>
+
+</div>

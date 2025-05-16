@@ -1,0 +1,118 @@
+﻿.main-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.box-container
+{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    border-radius: 1.5vh;
+    padding: 2%;
+    margin: 5%;
+    color: white;
+    background: linear-gradient(#171B5B, #3A0647);
+}
+
+.box-container label{
+    margin: 2%;
+    margin-bottom: 0%;
+}
+
+.box-container input
+{
+    margin: 2%;
+    border-style: none;
+    border-radius: 0.8vh;
+}
+
+.box-container button
+{
+    width: 40%;
+    margin: 5% 30%;
+    border-style: none;
+    border-radius: 0.8vh;
+    transition: 0.2s;
+} 
+
+.box-container button:hover
+{
+    background-color: rgb(76, 56, 148);
+}
+
+#key-input
+{
+    width: 25%;
+}
+
+#result-input
+{
+    height: 10vh;
+}
+
+
+@media screen and (max-width: 950px)
+{
+    .main-container
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+
+    .box-container
+    {
+        display: flex;
+        flex-direction: column;
+        border-radius: 1.5vh;
+        width: 100%;
+        padding: 2%;
+        margin: 5%;
+        color: white;
+        background: linear-gradient(#171B5B, #3A0647);
+    }
+
+    .box-container label{
+        margin: 2%;
+        margin-bottom: 0%;
+    }
+
+    .box-container input
+    {
+        margin: 2%;
+        border-style: none;
+        border-radius: 0.8vh;
+    }
+
+    .box-container button
+    {
+        width: 40%;
+        margin: 5% 30%;
+        border-style: none;
+        border-radius: 0.8vh;
+        transition: 0.2s;
+    } 
+
+    .box-container button:hover
+    {
+        background-color: rgb(76, 56, 148);
+    }
+
+    #key-input
+    {
+        width: 25%;
+    }
+
+    #result-input
+    {
+        height: 10vh;
+    }
+}
